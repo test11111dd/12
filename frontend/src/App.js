@@ -1287,49 +1287,53 @@ Or feel free to ask about lowering your premium! 💰`;
                 🤖 Calculate My AI Premium
               </button>
             </div>
-                  <div className="bg-blue-900/30 p-6 rounded-lg border border-blue-600 fade-in">
-                    {/* Top section - Risk badge and premium */}
-                    <div className="flex items-center justify-between mb-4">
-                      <div className={`px-4 py-2 rounded-full text-sm font-semibold ${
-                        quote.riskLevel === 'Low' ? 'bg-green-600 text-white risk-low' :
-                        quote.riskLevel === 'Medium' ? 'bg-yellow-600 text-white risk-medium' : 'bg-red-600 text-white risk-high'
-                      }`}>
-                        {quote.riskLevel} Risk
-                      </div>
-                      <div className="text-right">
-                        <p className="text-white font-bold text-2xl">€{quote.premium.toFixed(2)}</p>
-                        <p className="text-blue-200 text-sm">per month</p>
-                      </div>
-                    </div>
 
-                    {/* Coverage details */}
-                    <div className="text-center mb-4">
-                      <p className="text-blue-200 text-sm">
-                        {quote.duration.replace('month', ' month').replace('year', ' year')} coverage • €{quote.coverageAmount.toLocaleString()} insured
-                      </p>
+            {quote && (
+              <div className="mt-8">
+                <div className="bg-blue-900/30 p-6 rounded-lg border border-blue-600 fade-in">
+                  {/* Top section - Risk badge and premium */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`px-4 py-2 rounded-full text-sm font-semibold ${
+                      quote.riskLevel === 'Low' ? 'bg-green-600 text-white risk-low' :
+                      quote.riskLevel === 'Medium' ? 'bg-yellow-600 text-white risk-medium' : 'bg-red-600 text-white risk-high'
+                    }`}>
+                      {quote.riskLevel} Risk
                     </div>
-                    
-                    {/* Action buttons - horizontal layout */}
-                    <div className="flex justify-center">
-                      {/* Unified Get Insured & Save with AI Button */}
-                      <button 
-                        onClick={startChatbot}
-                        className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-700 hover:via-blue-700 hover:to-purple-700 text-white py-4 px-8 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg pulse-green"
-                      >
-                        🚀 Get Insured & Save with AI 💬
-                      </button>
-                    </div>
-                    
-                    {/* Features */}
-                    <div className="mt-4 text-center">
-                      <div className="text-xs text-blue-300 flex items-center justify-center space-x-4">
-                        <span>✅ Instant activation</span>
-                        <span>✅ AI-powered protection</span>
-                        <span>✅ No paperwork</span>
-                      </div>
+                    <div className="text-right">
+                      <p className="text-white font-bold text-2xl">€{quote.premium.toFixed(2)}</p>
+                      <p className="text-blue-200 text-sm">per month</p>
                     </div>
                   </div>
-                )}
+
+                  {/* Coverage details */}
+                  <div className="text-center mb-4">
+                    <p className="text-blue-200 text-sm">
+                      {quote.duration.replace('month', ' month').replace('year', ' year')} coverage • €{quote.coverageAmount.toLocaleString()} insured
+                    </p>
+                  </div>
+                  
+                  {/* Action buttons - horizontal layout */}
+                  <div className="flex justify-center">
+                    {/* Unified Get Insured & Save with AI Button */}
+                    <button 
+                      onClick={startChatbot}
+                      className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-700 hover:via-blue-700 hover:to-purple-700 text-white py-4 px-8 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg pulse-green"
+                    >
+                      🚀 Get Insured & Save with AI 💬
+                    </button>
+                  </div>
+                  
+                  {/* Features */}
+                  <div className="mt-4 text-center">
+                    <div className="text-xs text-blue-300 flex items-center justify-center space-x-4">
+                      <span>✅ Instant activation</span>
+                      <span>✅ AI-powered protection</span>
+                      <span>✅ No paperwork</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
               </div>
             </div>
           </div>
