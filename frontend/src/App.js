@@ -1334,8 +1334,6 @@ Or feel free to ask about lowering your premium! 💰`;
                 </div>
               </div>
             )}
-              </div>
-            </div>
           </div>
         </div>
       </section>
