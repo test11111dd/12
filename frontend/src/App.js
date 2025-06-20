@@ -644,7 +644,7 @@ const BlogList = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogArticles.map((article, index) => (
-              <article key={article.id} className={`bg-slate-800/50 rounded-xl overflow-hidden border border-blue-800 hover:border-blue-600 transition-all duration-300 hover:transform hover:scale-105 card-hover`} style={{animationDelay: `${index * 0.1}s`}}>
+              <article key={article.id} className={`bg-slate-800/50 rounded-xl overflow-hidden border border-blue-800 hover:border-blue-600 transition-all duration-300 hover:transform hover:scale-105 card-hover cursor-pointer`} style={{animationDelay: `${index * 0.1}s`}} onClick={() => navigate(`/article/${article.id}`)}>
                 <img 
                   src={article.image}
                   alt={article.title}
@@ -652,10 +652,13 @@ const BlogList = () => {
                 />
                 <div className="p-6">
                   <div className="text-blue-400 text-sm mb-2">{article.date}</div>
-                  <h3 className="text-xl font-bold text-white mb-3">{article.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-3 hover:text-blue-300 transition-colors">{article.title}</h3>
                   <p className="text-blue-200 mb-4">{article.excerpt}</p>
                   <button 
-                    onClick={() => navigate(`/article/${article.id}`)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      navigate(`/article/${article.id}`);
+                    }}
                     className="text-blue-400 hover:text-blue-300 font-semibold"
                   >
                     Read More →
