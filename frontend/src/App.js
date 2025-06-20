@@ -1292,14 +1292,14 @@ Or feel free to ask about lowering your premium! 💰`;
               <div className="mt-8">
                 <div className="bg-blue-900/30 p-6 rounded-lg border border-blue-600 fade-in">
                   {/* Top section - Risk badge and premium */}
-                  <div className="flex items-center justify-between mb-4">
-                    <div className={`px-4 py-2 rounded-full text-sm font-semibold ${
+                  <div className="text-center mb-4 space-y-2">
+                    <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold ${
                       quote.riskLevel === 'Low' ? 'bg-green-600 text-white risk-low' :
                       quote.riskLevel === 'Medium' ? 'bg-yellow-600 text-white risk-medium' : 'bg-red-600 text-white risk-high'
                     }`}>
                       {quote.riskLevel} Risk
                     </div>
-                    <div className="text-right">
+                    <div className="text-center">
                       <p className="text-white font-bold text-2xl">€{quote.premium.toFixed(2)}</p>
                       <p className="text-blue-200 text-sm">per month</p>
                     </div>
