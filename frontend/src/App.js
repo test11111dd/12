@@ -107,23 +107,6 @@ const blogArticles = [
         <a href="#calculator" style="background: #3b82f6; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">Get Covered Now – Takes 2 Minutes</a>
       </div>
       
-      <h2>📊 Key Statistics: The Crypto Threat Landscape</h2>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
-        <div style="background: #dc2626; color: white; padding: 20px; border-radius: 12px; text-align: center;">
-          <h3 style="margin-top: 0; font-size: 32px;">40%</h3>
-          <p style="margin: 0;">Exchange Hacks</p>
-        </div>
-        <div style="background: #f59e0b; color: white; padding: 20px; border-radius: 12px; text-align: center;">
-          <h3 style="margin-top: 0; font-size: 32px;">35%</h3>
-          <p style="margin: 0;">DeFi Exploits</p>
-        </div>
-        <div style="background: #8b5cf6; color: white; padding: 20px; border-radius: 12px; text-align: center;">
-          <h3 style="margin-top: 0; font-size: 32px;">25%</h3>
-          <p style="margin: 0;">Phishing Scams</p>
-        </div>
-      </div>
-      
       <p style="text-align: center; font-size: 18px; color: #64748b; margin-top: 40px;">
         <strong>Remember:</strong> In crypto, you are your own bank. But even banks have insurance.
       </p>
