@@ -719,7 +719,7 @@ const MainContent = () => {
     setChatMessages([
       {
         type: 'bot',
-        message: `Hi! I'm your AI risk advisor. I can help lower your premium of €${quote.premium.toFixed(2)} by analyzing your security setup. Let's start with a few quick questions! 🤖`,
+        message: `Hi! 👋 I'm your AI insurance advisor. I'll help you get crypto insurance coverage and find the best possible rates! ${quote ? `I can optimize your current quote of €${quote.premium.toFixed(2)}/month` : 'Let me analyze your security setup for personalized pricing'}. Ready to get started? 🚀`,
         timestamp: new Date()
       }
     ]);
