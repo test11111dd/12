@@ -1275,15 +1275,18 @@ Or feel free to ask about lowering your premium! 💰`;
                     <option value="1year">1 Year</option>
                   </select>
                 </div>
+              </div>
+            </div>
 
-                <button 
-                  onClick={calculatePremium}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg font-semibold transition-colors hover-glow"
-                >
-                  🤖 Calculate My AI Premium
-                </button>
-
-                {quote && (
+            {/* Calculate Button - Centered and Full Width */}
+            <div className="mt-8">
+              <button 
+                onClick={calculatePremium}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-lg font-semibold text-lg transition-colors hover-glow"
+              >
+                🤖 Calculate My AI Premium
+              </button>
+            </div>
                   <div className="bg-blue-900/30 p-6 rounded-lg border border-blue-600 fade-in">
                     {/* Top section - Risk badge and premium */}
                     <div className="flex items-center justify-between mb-4">
