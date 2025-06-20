@@ -1307,23 +1307,13 @@ Or feel free to ask about lowering your premium! 💰`;
                     </div>
                     
                     {/* Action buttons - horizontal layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {/* Get Insured Now Button */}
-                      <button 
-                        onClick={() => {
-                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
-                        className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white py-3 px-4 rounded-lg font-bold text-base transition-all transform hover:scale-105 shadow-lg pulse-green"
-                      >
-                        🚀 Get Insured Now
-                      </button>
-
-                      {/* Lower Your Premium Button */}
+                    <div className="flex justify-center">
+                      {/* Unified Get Insured & Save with AI Button */}
                       <button 
                         onClick={startChatbot}
-                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 px-4 rounded-lg font-semibold text-base transition-all transform hover:scale-105 shadow-lg"
+                        className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-700 hover:via-blue-700 hover:to-purple-700 text-white py-4 px-8 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg pulse-green"
                       >
-                        💬 Lower Premium
+                        🚀 Get Insured & Save with AI 💬
                       </button>
                     </div>
                     
